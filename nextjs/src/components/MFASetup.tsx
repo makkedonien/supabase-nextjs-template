@@ -163,7 +163,7 @@ export function MFASetup({ onStatusChange }: MFASetupProps) {
                             <div key={factor.id} className="flex items-center justify-between p-4 border rounded-lg">
                                 <div className="flex items-center gap-3">
                                     {factor.status === 'verified' ? (
-                                        <CheckCircle className="h-5 w-5 text-green-500" />
+                                        <CheckCircle className="h-5 w-5 text-[#36893B]" />
                                     ) : (
                                         <XCircle className="h-5 w-5 text-red-500" />
                                     )}

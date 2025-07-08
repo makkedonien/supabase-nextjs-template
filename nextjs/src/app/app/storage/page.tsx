@@ -250,7 +250,7 @@ export default function FileManagementPage() {
                                         </button>
                                         <button
                                             onClick={() => handleShare(file.name)}
-                                            className="p-2 text-green-600 hover:bg-green-50 rounded-full transition-colors"
+                                            className="p-2 text-[#36893B] hover:bg-[#F0F8F1] rounded-full transition-colors"
                                             title="Share"
                                         >
                                             <Share2 className="h-5 w-5"/>

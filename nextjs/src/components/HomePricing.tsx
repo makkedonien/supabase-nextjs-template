@@ -45,7 +45,7 @@ const HomePricing = () => {
                                 <ul className="space-y-3 mb-8 flex-grow">
                                     {tier.features.map((feature) => (
                                         <li key={feature} className="flex items-center gap-2">
-                                            <Check className="h-5 w-5 text-green-500" />
+                                            <Check className="h-5 w-5 text-[#36893B]" />
                                             <span className="text-gray-600">{feature}</span>
                                         </li>
                                     ))}

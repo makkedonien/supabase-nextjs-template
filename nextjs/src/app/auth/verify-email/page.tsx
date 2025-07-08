@@ -42,7 +42,7 @@ export default function VerifyEmailPage() {
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
             <div className="text-center">
                 <div className="flex justify-center mb-4">
-                    <CheckCircle className="h-16 w-16 text-green-500" />
+                    <CheckCircle className="h-16 w-16 text-[#36893B]" />
                 </div>
 
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
@@ -66,7 +66,7 @@ export default function VerifyEmailPage() {
                     )}
 
                     {success && (
-                        <div className="text-sm text-green-600 bg-green-50 rounded-md p-3">
+                        <div className="text-sm text-[#36893B] bg-[#F0F8F1] rounded-md p-3">
                             Verification email has been resent successfully.
                         </div>
                     )}

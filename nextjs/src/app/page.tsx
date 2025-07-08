@@ -19,7 +19,7 @@ export default function Home() {
       icon: TrendingUp,
       title: 'Strategic Takeaways',
       description: 'Get actionable insights and strategic recommendations from your content to stay ahead of trends',
-      color: 'text-green-600'
+      color: 'text-[#36893B]'
     },
     {
       icon: BookOpen,
