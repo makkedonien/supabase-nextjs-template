@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import {usePathname, useRouter} from 'next/navigation';
+import Image from 'next/image';
 import {
     Home,
     User,
@@ -9,7 +10,7 @@ import {
     X,
     ChevronDown,
     LogOut,
-    Key, Files, LucideListTodo,
+    Key, Files, LucideListTodo, Rss,
 } from 'lucide-react';
 import { useGlobal } from "@/lib/context/GlobalContext";
 import { createSPASassClient } from "@/lib/supabase/client";
@@ -48,6 +49,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         { name: 'Homepage', href: '/app', icon: Home },
         { name: 'Example Storage', href: '/app/storage', icon: Files },
         { name: 'Example Table', href: '/app/table', icon: LucideListTodo },
+        { name: 'Content Feed', href: '/app/content-feed', icon: Rss },
         { name: 'User Settings', href: '/app/user-settings', icon: User },
     ];
 
@@ -67,7 +69,13 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
                 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
 
                 <div className="h-16 flex items-center justify-between px-4 border-b">
-                    <span className="text-xl font-semibold text-primary-600">{productName}</span>
+                    <Image 
+                        src="/images/taxfix_logo.png" 
+                        alt="Taxfix Logo" 
+                        width={120} 
+                        height={40}
+                        className="h-8 w-auto"
+                    />
                     <button
                         onClick={toggleSidebar}
                         className="lg:hidden text-gray-500 hover:text-gray-700"
