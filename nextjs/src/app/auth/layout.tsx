@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 
 export default function AuthLayout({
@@ -40,9 +41,15 @@ export default function AuthLayout({
                 </Link>
 
                 <div className="sm:mx-auto sm:w-full sm:max-w-md">
-                    <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900">
-                        {productName}
-                    </h2>
+                    <div className="text-center">
+                        <Image 
+                            src="/images/taxfix_logo.png" 
+                            alt="Taxfix Logo" 
+                            width={120} 
+                            height={40}
+                            className="h-10 w-auto mx-auto"
+                        />
+                    </div>
                 </div>
 
                 <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">

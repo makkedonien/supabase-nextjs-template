@@ -62,21 +62,12 @@ export default function AuthAwareButtons({ variant = 'primary' }) {
             <ArrowRight className="ml-2 h-5 w-5" />
         </Link>
     ) : (
-        <>
-            <Link
-                href="/auth/register"
-                className="inline-flex items-center px-6 py-3 rounded-lg bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors"
-            >
-                Start Building Free
-                <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-            <Link
-                href="#features"
-                className="inline-flex items-center px-6 py-3 rounded-lg border border-gray-300 text-gray-700 font-medium hover:bg-gray-50 transition-colors"
-            >
-                Learn More
-                <ChevronRight className="ml-2 h-5 w-5" />
-            </Link>
-        </>
+        <Link
+            href="/auth/register"
+            className="inline-flex items-center px-6 py-3 rounded-lg bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors"
+        >
+            Get Smarter!
+            <ArrowRight className="ml-2 h-5 w-5" />
+        </Link>
     );
 }
